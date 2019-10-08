@@ -1,0 +1,35 @@
+.p-sidemenu{
+    font-size:$font-size_default;
+    color:$font-color_white;
+
+}
+.p-sidelists{
+    margin-left:$space_l;
+    padding-top:$space_l;
+    &__head{
+        margin-bottom:$space_l;
+        font-size:$font-size_l;
+    }
+    &__li{
+        margin-bottom:$space_m;
+        a{
+            padding:$space_s;
+            color:$font-color_white;
+        }
+        a:hover{
+            color:$hover-color;
+        }
+    }
+}
+.p-submenu{
+    margin-left:$space_l;
+    display:none;
+    &__list{
+        margin-top:$space_s;
+    }
+    &__link{
+        color:$font-color_white;
+        padding: $space_s;
+    }
+
+}

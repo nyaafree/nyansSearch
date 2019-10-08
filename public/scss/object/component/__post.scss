@@ -1,0 +1,54 @@
+.c-post{
+    border-bottom: 2px  #4d4d4d solid;
+    width:45%;
+    padding:$space_m $space_xl;
+    box-sizing: border-box;
+    background:#f5f5ea;
+    border-radius: $space_s;
+    margin-bottom:$space_m;
+    margin-right:$space_xl;
+    @include mq('md'){
+        width:100%;
+    }
+    &:last-child{
+        margin-bottom:$space_l;
+    }
+    &__img{
+        background-size:cover !important;
+        margin-bottom:$space_l;
+        height:300px;
+        background-position: center !important;
+        vertical-align: middle !important;
+        object-fit: cover;
+        object-position: 100% 100%;
+
+    }
+    &__container1{
+        display:flex;
+
+    }
+    &__container2{
+        display:flex;
+        align-items: center;
+        margin-bottom: $space_m;
+    }
+    &__area{
+        margin-left:$space_m;
+    }
+
+
+
+    &__name{
+        font-size: $font-size_xl;
+        margin-bottom:$space_m;
+    }
+    &__link{
+        display:block;
+        color:$font-color_default;
+        margin:$space_m auto;
+    }
+    &__review{
+        padding: $space_s $space_m;
+        margin-top:$space_m;
+    }
+}

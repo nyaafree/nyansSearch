@@ -1,0 +1,28 @@
+.c-hamburger{
+    font-size: $font-size_xl;
+    display:none;
+    @include mq(){
+        display:block;
+        position: fixed;
+        top:0;
+        right:-100%;
+        background:rgba(216, 127, 179, 0.7);
+        width:100%;
+        height:100vh;
+        padding-top:50px;
+        transition: .5s;
+        padding-bottom:$space_xxl;
+        &.active{
+            transition: .5s;
+            transform: translateX(-100%);
+            z-index:2;
+        }
+    }
+    &__list{
+        margin:$space_xl auto;
+        text-align: center;
+        border-bottom:1px dotted #fff;
+        padding:$space_m;
+        box-sizing: border-box;
+    }
+}

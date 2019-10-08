@@ -1,0 +1,11 @@
+#submain{
+    width:30%;
+    background: -moz-linear-gradient(top, #ff708d, #FFF);
+    background: -webkit-linear-gradient(top, #ff708d, #FFF);
+    background: linear-gradient(to bottom, #ff708d, #FFF);
+    padding: $space_m;
+    box-sizing: border-box;
+    @include mq(){
+        display: none;
+    }
+}

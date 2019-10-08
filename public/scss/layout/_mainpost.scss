@@ -1,0 +1,13 @@
+#mainpost{
+    width:80%;
+    margin:0 auto;
+    min-height:800px;
+    background:rgb(243, 231, 237);
+    margin-top:80px;
+    @include mq('lg'){
+        width:100%;
+    }
+    @include mq(){
+        margin-top: 60px;
+    }
+}

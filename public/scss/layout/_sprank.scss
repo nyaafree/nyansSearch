@@ -1,0 +1,10 @@
+#sprank{
+    display:none;
+    background: -moz-linear-gradient(top, #ff708d, #FFF);
+    background: -webkit-linear-gradient(top, #ff708d, #FFF);
+    background: linear-gradient(to bottom, #ff708d, #FFF);
+    padding: $space_m;
+    @include mq(){
+        display:block;
+    }
+}

@@ -1,0 +1,35 @@
+.c-ribbon{
+    color:#fff;
+    text-align:center;
+    padding:$space_s $space_m;
+    box-sizing:border-box;
+    font-family:$font-family_main;
+    border-radius:$space_xxl;
+    &.lblue{
+        background: -moz-linear-gradient(left, #FFC778, #e584dd);
+        background: -webkit-linear-gradient(left, #FFC778, #e584dd);
+        background: linear-gradient(to right, #FFC778, #e584dd);
+        width:80px;
+        position:absolute;
+        bottom:60px;
+        left:20px;
+    }
+    &.orange{
+        background: -moz-linear-gradient(left, #FFC778, #be22b2);
+        background: -webkit-linear-gradient(left, #FFC778, #be22b2);
+        background: linear-gradient(to right, #FFC778,  #be22b2);
+        width:150px;
+        position:absolute;
+        bottom:60px;
+        left:120px;
+    }
+    &.special{
+        min-width:250px;
+        position:absolute;
+        bottom:20px;
+        left:20px;
+        background: -moz-linear-gradient(left, #FFC778 , rgb(231, 122, 92) );
+        background: -webkit-linear-gradient(left,#FFC778 , rgb(231, 122, 92));
+        background: linear-gradient(to right,#FFC778 , rgb(231, 122, 92));
+    }
+}

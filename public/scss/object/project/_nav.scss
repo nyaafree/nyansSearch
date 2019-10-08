@@ -1,0 +1,56 @@
+.p-nav{
+    display:flex;
+    align-items: center;
+    align-content: space-around;
+    position:relative;
+    @include mq(){
+        width:80%;
+    }
+    &__title{
+        font-size:$font-size_xxl;
+        color: #fff;
+        font-family: $font-family_title;
+        margin-left:$space_s;
+        @include mq(){
+            font-size: $font-size_xl;
+        }
+        &:hover{
+            color:rgb(240, 128, 190);
+            text-decoration:none;
+        }
+    }
+    &__container1{
+        display: flex;
+        align-items: center;
+    }
+    &__menus{
+        width:200px;
+        display:flex;
+        margin-left:$space_s;
+        margin-right: $space_s;
+        &.u-left{
+            margin-left:$space_m;
+            @include mq(){
+                display:none;
+            }
+        }
+        &.u-right{
+            position:absolute;
+            right:20px;
+            @include mq(){
+                display:none
+            }
+        }
+    }
+    &__li{
+        margin-right:$space_s;
+        @include mq(){
+            display:none;
+        }
+        a{
+            padding:5px;
+            box-sizing:border-box;
+        }
+
+    }
+}

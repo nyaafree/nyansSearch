@@ -1,0 +1,18 @@
+#adminmain{
+    width:100%;
+    min-height:800px;
+    padding-right:100px;
+    padding-left:100px;
+    background:#6A91C1;
+    color:#fff;
+    padding-top:$space_xl;
+    padding-bottom:$space_xxl;
+    .table{
+        color:#222;
+    }
+    @include mq('md'){
+        padding-right:$space_m;
+        padding-left:$space_m;
+
+    }
+}
