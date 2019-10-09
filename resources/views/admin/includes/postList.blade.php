@@ -17,7 +17,7 @@
                   <tr>
                       <td>{{$post->id}}</td>
                       <td>
-                          <img src="{{ url('images/posts/'.$post->photo['filename']) }}" id="u-post-img">
+                          <img src="{{ url('/images/posts/'.$post->photo['filename']) }}" id="u-post-img">
                       </td>
                       <td><a href="{{ url('/admin/posts/'.$post->id.'/edit')}}" class="u-edit-user">{{$post->name}}</a></td>
                       <td class="u-sp-none">{{ $post->area->name }}</td>

@@ -42,6 +42,10 @@
         box-sizing:border-box;
         border-radius: $space_m;
         width:68%;
+        word-wrap: break-word;
+        @include mq(){
+            width: 100%;
+        }
     }
     &__img{
         background-size:cover !important;
@@ -78,7 +82,15 @@
         margin:$space_xl auto;
         @include mq(){
             width:100%;
+            p{
+                img{
+                    display:block;
+                    width:100%!important;
+                }
+            }
         }
+
     }
+
 
 }

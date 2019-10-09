@@ -7,14 +7,14 @@
                  Home >> {{$post->area->name }} >> <span class="title">{{$post->name }}</span>
              </div>
              <div class="p-post__show">
-                 <img src=" {{url('images/posts/'.$post->photo['filename'])}}" class="p-post__img">
+                 <img src=" {{url('/images/posts/'.$post->photo['filename'])}}" class="p-post__img">
              </div>
              <div class="p-post__shop">
                     <a href="{{$post->url}}">{{$post->name}}</a>
              </div>
              <div class="p-post__container1">
                  <div class="p-post__imgWrap">
-                     <img src=" {{url('images/posts/'.$post->photo['filename'])}}" class="p-post__img">
+                     <img src=" {{url('/images/posts/'.$post->photo['filename'])}}" class="p-post__img">
                  </div>
                  <div class="p-post__sub">
                      <div class="p-post__container2">

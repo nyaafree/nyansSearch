@@ -1,7 +1,7 @@
 <header id="adminheader">
    <nav class="p-nav">
        <div class="p-nav__container1">
-           <a href="/" class="p-nav__title">Nyans Search</a>
+           <a href="{{ url('/') }}" class="p-nav__title">Nyans Search</a>
            <form method="GET" action="/posts/area/">
             @csrf
             <select name="area" onchange="submit(this.form)" class="select-box sp-none">

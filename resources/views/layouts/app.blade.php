@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>NyansSearch</title>
+    <title>NyansSearchppp</title>
 
     <!-- Scripts -->
     <script src="{{ asset('vendor/jquery/jquery-3.3.1.min.js') }}"></script>
