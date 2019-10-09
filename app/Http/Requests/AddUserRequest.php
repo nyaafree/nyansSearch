@@ -32,4 +32,16 @@ class AddUserRequest extends FormRequest
             'password_re' => 'same:password'
         ];
     }
+
+    public function attributes()
+    {
+        return [
+            'name' => 'ユーザー名',
+            'email' =>'メールアドレス',
+            'role_id' => '管理者権限',
+            'active' => '会員属性',
+            'password' => 'パスワード',
+            'password_re' => 'パスワード(再入力)',
+        ];
+    }
 }

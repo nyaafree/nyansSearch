@@ -8,7 +8,7 @@
                     <span class="p-rank__number">{{ ++$i }}位</span>
                     <span class="p-rank__area">{{ $topPost->area->name }}</span>
                     <div class="p-rank__shop">
-                        <a href="/posts/{{$topPost->id}}">{{$topPost->name}}</a>
+                        <a href="{{ url('/posts/') }}/{{$topPost->id}}">{{$topPost->name}}</a>
                     </div>
                 </div>
                 <div>

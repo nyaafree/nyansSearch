@@ -21,14 +21,18 @@
             <div class="col-sm-9">
                 <div class="form-group">
                     <label for="name">店舗名</label>
-                    <input type="text" name="name" class="form-control" placeholder="店舗名を入力">
+                    <input type="text" name="name" class="form-control" placeholder="店舗名を入力" value="{{ old('name') }}">
                 </div>
                 <div class="form-group">
                     <label for="category_id">カテゴリー</label>
                     <select name="category_id" class="form-control">
                         <option disabled selected>カテゴリを選択してください</option>
                         @foreach ($categories as $category)
-                            <option value="{{ $category->id }}">
+                            <option value="{{ $category->id }}"
+                              @if ($category->id == old('category_id'))
+                                selected
+                              @endif
+                            >
                             {{ $category->name }}</option>
                         @endforeach
                     </select>
@@ -38,26 +42,30 @@
                     <select name="area_id" class="form-control">
                         <option disabled selected>地域を選択してください</option>
                         @foreach ($areas as $area)
-                           <option value="{{$area->id}}">
+                           <option value="{{$area->id}}"
+                            @if ($area->id == old('area_id'))
+                              selected
+                            @endif
+                            >
                            {{ $area->name }}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="url">URL</label>
-                    <input type="text" name="url" class="form-control" placeholder="URLを入力">
+                    <input type="text" name="url" class="form-control" placeholder="URLを入力" value="{{ old('url') }}">
                 </div>
                 <div class="form-group">
                      <label for="detail">詳細欄</label>
                      <textarea name="detail" rows="3" class="form-control">
-
+                        {{ old('detail') }}
                      </textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="review">口コミ</label>
                     <textarea name="review" rows="5" class="form-control" id="article-ckeditor">
-
+                      {{ old('review') }}
                     </textarea>
                 </div>
                 <button class="btn btn-primary" type="submit">送信</button>

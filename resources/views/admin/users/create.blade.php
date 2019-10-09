@@ -29,7 +29,12 @@
             <select name="role_id" class="form-control">
                 <option value="" disabled selected>ユーザーの権限を選択</option>
                 @foreach ($roles as $role)
-                    <option value="{{ $role->id}}">{{ $role->name }}</option>
+                    <option value="{{ $role->id}}"
+                        @if ($role->id == old('role_id'))
+                          selected
+                        @endif>
+                        {{ $role->name }}
+                    </option>
                 @endforeach
             </select>
         </div>
@@ -37,8 +42,18 @@
             <label for="active">会員属性</label>
             <select name="active" class="form-control">
                 <option value="" disabled selected>アクティブかどうかを選択</option>
-                <option value="1">アクティブ</option>
-                <option value="2">退会済</option>
+                <option value="1"
+                  @if (old('active') == "1")
+                    selected
+                  @endif>
+                  アクティブ
+                </option>
+                <option value="2"
+                  @if (old('active') == "2")
+                    selected
+                  @endif>
+                  退会済
+                </option>
             </select>
          </div>
 
