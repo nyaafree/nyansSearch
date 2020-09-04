@@ -18,7 +18,7 @@
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.5",
-        "node-sass": "^4.9.4",
+        "node-sass": "^4.13.1",
         "nodemon": "^1.18.4",
         "popper.js": "^1.12",
         "vue": "^2.5.7"
